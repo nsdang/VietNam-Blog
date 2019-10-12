@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.text-title {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 160em;
+    letter-spacing: 2px;
+    word-spacing: -3.8px;
+    color: white;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 10px;
+    background-color: #ede6dd;
+    z-index: 1;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    text-align: center;
+    display: block;
+    padding: 8px 79.8px;
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    background-color: #ad4737;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #aba69f;
+    color: white;
+}
+
+li a:hover {
+    background-color: #732e24;
+    color: white;
+}
+
+.bordering-image {
+    border: solid black 1px;
+    padding: 2px;
+}
+
+.underlying-content {
+    border-bottom: solid #ad4737 5px;
+    padding: 7px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    margin: 30px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(115, 46, 36, 0.5);
+    color: #f1f1f1;
+    width: 86.7%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+#cuisine {}
+
+#holiday {}
+
+#language {}
